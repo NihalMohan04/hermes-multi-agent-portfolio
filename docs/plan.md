@@ -6,6 +6,8 @@
 - Glassmorphism cards, subtle gradients
 - Smooth scroll-triggered animations
 - Fully responsive (mobile-first)
+- **User preference**: Clean animations (60fps, CSS-first where possible), faster UI (minimal JS reflows), aesthetic designs (polished, not cluttered)
+- Performance budget: No layout thrashing, prefer `transform` and `opacity` for animations
 
 ## File Structure
 ```
