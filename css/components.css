@@ -59,12 +59,12 @@
 }
 
 /* Project Card Image */
-.project-card img {
+.project-card__image {
   width: 100%;
-  border-radius: 8px;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(6, 182, 212, 0.3) 100%);
 }
 
 /* Section Title */
@@ -218,3 +218,26 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+
+/* About */
+.about__bio { max-width: 600px; margin: 0 auto 2rem; color: var(--text-secondary); font-size: 1.125rem; line-height: 1.7; text-align: center; }
+.about__skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; }
+.about__tag { display: inline-block; padding: 0.35rem 0.75rem; background: rgba(6,182,212,0.15); color: var(--accent); border-radius: 9999px; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Contact */
+.contact__field { display: flex; flex-direction: column; gap: 0.5rem; }
+.contact__label { font-size: 0.875rem; font-weight: 500; color: var(--text-secondary); }
+.contact__socials { display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; }
+.contact__social { color: var(--text-secondary); transition: color var(--transition), transform var(--transition); }
+.contact__social:hover { color: var(--accent); transform: translateY(-2px); }
+
+/* Skills */
+.skill-item { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 1.5rem; background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); text-align: center; transition: transform var(--transition); }
+.skill-item:hover { transform: translateY(-3px); }
+.skill-item__icon { font-size: 1.25rem; color: var(--accent); font-weight: 700; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.skill-item__name { font-size: 0.875rem; color: var(--text-secondary); font-weight: 500; }
+
+/* Footer */
+.footer__content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.footer__top { color: var(--accent); text-decoration: none; font-weight: 500; transition: color var(--transition); }
+.footer__top:hover { color: var(--accent-hover); }
